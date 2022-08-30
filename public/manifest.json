@@ -1,0 +1,23 @@
+{
+  "short_name": "STASH - Experience Digital Banking in DeFi with Auto-compounding and Auto-staking",
+  "name": "STASH - Experience Digital Banking in DeFi with Auto-compounding and Auto-staking",
+  "description": "STASH is a unique, blockchain solution pioneering the future of decentralised finance, combining high-yielding, auto-compounding, auto-staking features with digital banking facilities.",
+  "homepage_url": "https://Stash.Capital",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "logo128.png",
+      "type": "image/png",
+      "sizes": "128x111"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
