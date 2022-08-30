@@ -1,0 +1,38 @@
+var _path;
+
+var _excluded = ["title", "titleId"];
+
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+function SvgMedium(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, _excluded);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 47,
+    height: 45,
+    viewBox: "0 0 47 45",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9.94728 0C7.53404 0 5.21964 0.937585 3.51322 2.6065C1.8068 4.27541 0.848145 6.53894 0.848145 8.89914V35.5965C0.848145 37.9567 1.8068 40.2203 3.51322 41.8892C5.21964 43.5581 7.53404 44.4957 9.94728 44.4957H37.2447C39.6579 44.4957 41.9723 43.5581 43.6787 41.8892C45.3852 40.2203 46.3438 37.9567 46.3438 35.5965V8.89914C46.3438 6.53894 45.3852 4.27541 43.6787 2.6065C41.9723 0.937585 39.6579 0 37.2447 0H9.94728ZM5.39771 8.89914C5.39771 7.71904 5.87704 6.58727 6.73025 5.75282C7.58346 4.91836 8.74066 4.44957 9.94728 4.44957H37.2447C38.4513 4.44957 39.6085 4.91836 40.4617 5.75282C41.3149 6.58727 41.7943 7.71904 41.7943 8.89914V35.5965C41.7943 36.7766 41.3149 37.9084 40.4617 38.7429C39.6085 39.5773 38.4513 40.0461 37.2447 40.0461H9.94728C8.74066 40.0461 7.58346 39.5773 6.73025 38.7429C5.87704 37.9084 5.39771 36.7766 5.39771 35.5965V8.89914ZM12.2221 11.1239C11.6188 11.1239 11.0402 11.3583 10.6136 11.7755C10.1869 12.1928 9.94728 12.7587 9.94728 13.3487C9.94728 13.9388 10.1869 14.5046 10.6136 14.9219C11.0402 15.3391 11.6188 15.5735 12.2221 15.5735V28.9222C11.6188 28.9222 11.0402 29.1566 10.6136 29.5738C10.1869 29.991 9.94728 30.5569 9.94728 31.147C9.94728 31.737 10.1869 32.3029 10.6136 32.7201C11.0402 33.1374 11.6188 33.3718 12.2221 33.3718H16.7716C17.3749 33.3718 17.9535 33.1374 18.3801 32.7201C18.8068 32.3029 19.0464 31.737 19.0464 31.147C19.0464 30.5569 18.8068 29.991 18.3801 29.5738C17.9535 29.1566 17.3749 28.9222 16.7716 28.9222V20.6972L21.7034 27.9322C21.9104 28.2378 22.1916 28.4886 22.5218 28.662C22.8521 28.8355 23.2211 28.9263 23.596 28.9263C23.9709 28.9263 24.3399 28.8355 24.6701 28.662C25.0004 28.4886 25.2816 28.2378 25.4886 27.9322L30.4203 20.6972V28.9222C29.817 28.9222 29.2384 29.1566 28.8118 29.5738C28.3852 29.991 28.1456 30.5569 28.1456 31.147C28.1456 31.737 28.3852 32.3029 28.8118 32.7201C29.2384 33.1374 29.817 33.3718 30.4203 33.3718H34.9699C35.5732 33.3718 36.1518 33.1374 36.5784 32.7201C37.005 32.3029 37.2447 31.737 37.2447 31.147C37.2447 30.5569 37.005 29.991 36.5784 29.5738C36.1518 29.1566 35.5732 28.9222 34.9699 28.9222V15.5735C35.5732 15.5735 36.1518 15.3391 36.5784 14.9219C37.005 14.5046 37.2447 13.9388 37.2447 13.3487C37.2447 12.7587 37.005 12.1928 36.5784 11.7755C36.1518 11.3583 35.5732 11.1239 34.9699 11.1239H32.6951C32.3207 11.1239 31.9521 11.2142 31.6219 11.3869C31.2918 11.5596 31.0103 11.8093 30.8025 12.1139L23.596 22.6861L16.3895 12.1139C16.1817 11.8093 15.9002 11.5596 15.5701 11.3869C15.2399 11.2142 14.8713 11.1239 14.4968 11.1239H12.2221Z",
+    fill: "#EA1C1C"
+  })));
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgMedium);
+export default __webpack_public_path__ + "static/media/medium.be8b6f3458bcbee86177281580742106.svg";
+export { ForwardRef as ReactComponent };
