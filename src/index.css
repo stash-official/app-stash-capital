@@ -1,0 +1,39 @@
+html {
+  scrollbar-face-color: #e2d6cf;
+  scrollbar-base-color: #e2d6cf;
+  scrollbar-3dlight-color: #e2d6cf;
+  scrollbar-highlight-color: #e2d6cf;
+  scrollbar-track-color: transparent;
+  scrollbar-arrow-color: transparent;
+  scrollbar-shadow-color: #e2d6cf;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: "Poppins", sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: overlay;
+  background-color: #243441;
+}
+
+* {
+  outline: none;
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none !important;
+}

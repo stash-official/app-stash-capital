@@ -1,0 +1,45 @@
+var _path, _path2, _path3, _path4;
+
+var _excluded = ["title", "titleId"];
+
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+function SvgReddit(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, _excluded);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 47,
+    height: 39,
+    viewBox: "0 0 47 39",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M17.309 22.003C15.7026 22.003 14.4221 20.7735 14.4221 19.2024C14.4221 17.654 15.7259 16.3789 17.2857 16.3789C18.8456 16.3789 20.1726 17.6996 20.1493 19.2251C20.1493 20.7507 18.8689 22.003 17.309 22.003Z",
+    fill: "#EA1C1C"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "M30.0905 22.0033C28.5074 22.0033 27.2036 20.7055 27.2269 19.1799C27.2502 17.6771 28.5539 16.402 30.0905 16.3792C31.6504 16.3564 32.9774 17.6543 32.9774 19.2027C32.9541 20.7738 31.6969 22.0261 30.0905 22.0033Z",
+    fill: "#EA1C1C"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    d: "M24.1536 28.8114C21.8254 28.7658 19.9396 28.5609 18.2167 27.6729C17.7278 27.4224 17.3087 27.1036 16.8897 26.7621C16.5405 26.4889 16.4939 26.1018 16.7733 25.783C17.0759 25.4414 17.4484 25.4414 17.7977 25.7147C19.2644 26.9442 21.0571 27.2403 22.8731 27.3541C24.6658 27.4907 26.4352 27.2858 28.1114 26.6027C28.6003 26.3978 29.066 26.079 29.5083 25.783C29.9507 25.487 30.3465 25.4414 30.6258 25.7602C30.9285 26.079 30.8586 26.5116 30.4396 26.8759C29.3919 27.7867 28.1114 28.2421 26.7611 28.4926C25.7367 28.6747 24.7356 28.7431 24.1536 28.8114Z",
+    fill: "#EA1C1C"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    d: "M43.4076 10.9112C41.9409 9.86375 40.1016 9.27173 38.2624 9.27173C37.3311 9.27173 36.4231 9.40835 35.5617 9.68159C32.7447 8.24709 29.5784 7.42738 25.9697 7.08583L26.7846 3.62482L31.5573 4.58116C31.8134 6.06119 33.1172 7.17691 34.7003 7.17691C36.4697 7.17691 37.8899 5.78795 37.8899 4.05745C37.8899 2.32695 36.4464 0.937988 34.677 0.937988C33.5595 0.937988 32.5817 1.50723 31.9996 2.37249L26.1327 1.18846C25.5041 1.07461 24.8988 1.43892 24.7591 2.05371L23.595 7.01752L21.779 7.06306H21.6859H21.5928C18.054 7.3363 14.7713 8.20155 11.8611 9.70436C10.9764 9.40835 10.0684 9.27173 9.13713 9.27173C6.2735 9.27173 3.57284 10.6607 1.91985 12.9832C0.569522 14.8959 0.0806095 17.3095 0.54624 19.5865C0.872182 21.1348 1.64047 22.5465 2.71142 23.685C2.87439 25.9165 3.64269 28.034 5.06286 30.0378C7.25132 33.1345 10.371 35.3887 14.6316 36.8915C17.4952 37.8934 20.4986 38.4171 23.5717 38.4171C25.0385 38.4171 26.5518 38.3032 28.0651 38.0755C32.1393 37.438 35.6781 36.0262 38.565 33.8403C42.2901 31.0397 44.3156 27.647 44.6182 23.7533C46.0617 22.2733 46.8998 20.3151 46.993 18.2203C47.1094 15.3057 45.759 12.5961 43.4076 10.9112ZM40.4043 21.2486C40.1715 21.3853 39.9619 21.4991 39.9852 21.8407C40.2879 25.4611 38.5418 28.0796 35.748 30.1972C33.2801 32.0643 30.4165 33.0662 27.3666 33.5443C26.1094 33.7493 24.8522 33.8403 23.595 33.8403C21.1039 33.8403 18.6593 33.4305 16.238 32.588C13.3045 31.5634 10.7203 30.015 8.92759 27.442C7.7868 25.8254 7.20476 24.0493 7.41429 22.0684C7.43757 21.6585 7.32117 21.4308 6.94866 21.2259C4.96973 20.0191 4.43426 17.4233 5.7613 15.5562C6.55288 14.4177 7.83336 13.8257 9.13713 13.8257C9.97526 13.8257 10.8367 14.0762 11.5817 14.6226C11.7447 14.7365 11.8843 14.8048 12.0008 14.8048C12.1404 14.8048 12.2569 14.7365 12.4198 14.6454C15.3067 12.7783 18.5196 11.8675 21.942 11.617L24.5728 11.5259C28.5074 11.7536 32.1859 12.6872 35.3987 14.8959C36.33 14.1217 37.3311 13.8029 38.2624 13.8029C39.1704 13.8029 40.0085 14.0989 40.6604 14.5543C43.0351 16.2848 42.8954 19.7458 40.4043 21.2486Z",
+    fill: "#EA1C1C"
+  })));
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgReddit);
+export default __webpack_public_path__ + "static/media/reddit.846e50b6fd9e274941244f97440b4d0f.svg";
+export { ForwardRef as ReactComponent };
