@@ -5,7 +5,7 @@
   "description": "Stash Capital App",
   "private": true,
   "scripts": {
-    "start": "PORT=3002 react-scripts start",
+    "start": "react-scripts start",
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "winBuild": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
     "release": "release-it",
